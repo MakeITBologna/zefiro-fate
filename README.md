@@ -1,5 +1,5 @@
 # Zefiro Fat.E.
-Zeifro integration to be compiiant with "Fatturazione Elettronica", a common standard for Italian business payments.
+Zefiro integration to be compliant with "Fatturazione Elettronica", a common standard for Italian business payments.
 
 ## License
 
