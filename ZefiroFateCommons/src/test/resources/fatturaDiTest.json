@@ -1,0 +1,130 @@
+
+	{
+	"fatturaElettronicaHeader": {
+		"datiTrasmissione": {
+			"idTrasmittente": {
+				"idPaese": "IT",
+				"idCodice": "01234567890"
+			},
+			"progressivoInvio": "00001",
+			"formatoTrasmissione": "FPR12",
+			"codiceDestinatario": "ABC1234"
+		},
+		"cedentePrestatore": {
+			"datiAnagrafici": {
+				"idFiscaleIVA": {
+					"idPaese": "IT",
+					"idCodice": "01234567890"
+				},
+				"anagrafica": {
+					"denominazione": "SOCIETA' ALPHA SRL"
+				},
+				"regimeFiscale": "RF19"
+			},
+			"sede": {
+				"indirizzo": "VIALE ROMA 543",
+				"cap": "07100",
+				"comune": "SASSARI",
+				"provincia": "SS",
+				"nazione": "IT"
+			}
+		},
+		"cessionarioCommittente": {
+			"datiAnagrafici": {
+				"codiceFiscale": "09876543210",
+				"anagrafica": {
+					"denominazione": "DITTA BETA"
+				}
+			},
+			"sede": {
+				"indirizzo": "VIA TORINO 38-B",
+				"cap": "00145",
+				"comune": "ROMA",
+				"provincia": "RM",
+				"nazione": "IT"
+			}
+		}
+	},
+	"fatturaElettronicaBody": [
+		{
+			"datiGenerali": {
+				"datiGeneraliDocumento": {
+					"tipoDocumento": "TD01",
+					"divisa": "EUR",
+					"data": "2014-12-18",
+					"numero": "123",
+					"importoTotaleDocumento": "1234566.89",
+					"causale": [
+						"LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
+						"SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
+					]
+				},
+				"datiOrdineAcquisto": [
+					{
+						"riferimentoNumeroLinea": [
+							"1"
+						],
+						"idDocumento": "66685",
+						"numItem": "1"
+					}
+				],
+				"datiContratto": [
+					{
+						"riferimentoNumeroLinea": [
+							"1"
+						],
+						"idDocumento": "123",
+						"data": "2012-09-01",
+						"numItem": "5",
+						"codiceCUP": "123abc",
+						"codiceCIG": "456def"
+					}
+				],
+				"datiTrasporto": {
+					"datiAnagraficiVettore": {
+						"idFiscaleIVA": {
+							"idPaese": "IT",
+							"idCodice": "24681012141"
+						},
+						"anagrafica": {
+							"denominazione": "Trasporto spa"
+						}
+					},
+					"dataOraConsegna": "2012-10-22T16:46:12.000+02:00"
+				}
+			},
+			"datiBeniServizi": {
+				"dettaglioLinee": [
+					{
+						"numeroLinea": "1",
+						"descrizione": "DESCRIZIONE DELLA FORNITURA",
+						"quantita": "5.00",
+						"prezzoUnitario": "1.00",
+						"prezzoTotale": "5.00",
+						"aliquotaIVA": "22.00"
+					}
+				],
+				"datiRiepilogo": [
+					{
+						"aliquotaIVA": "22.00",
+						"imponibileImporto": "5.00",
+						"imposta": "1.10",
+						"esigibilitaIVA": "I"
+					}
+				]
+			},
+			"datiPagamento": [
+				{
+					"condizioniPagamento": "TP01",
+					"dettaglioPagamento": [
+						{
+							"modalitaPagamento": "MP01",
+							"dataScadenzaPagamento": "2015-01-30",
+							"importoPagamento": "6.10"
+						}
+					]
+				}
+			]
+		}
+	]
+}

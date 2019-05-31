@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+	<system systemId="xmldsig-core-schema.xsd" uri="import/xmldsig-core-schema.xsdl" />
+	
+</catalog>
